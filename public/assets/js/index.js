@@ -30,6 +30,7 @@ const getNotes = () =>
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
+      'Accept': 'application/json' //added to resolve a JSON parsing error
     },
   });
 
@@ -38,6 +39,7 @@ const saveNote = (note) =>
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
+      'Accept': 'application/json' //added to resolve a JSON parsing error
     },
     body: JSON.stringify(note),
   });
