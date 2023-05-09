@@ -42,6 +42,12 @@ app.post('/api/notes', (req, res) => {
     }
 });
 
+
+//DELETE /api/notes
+app.delete('/api/notes/:id', (req, res) => {
+    readFromFile("./db/db.json").then((data) => res.json(JSON.parse(data)));
+});
+
 //Another HTML route
 // GET * Route for homepage
 app.get('*', (req, res) =>
