@@ -8,4 +8,4 @@ This application can be used to write and save notes. This application uses an E
 
 # Deployed Application
 
-![View the deployed Note Taker app at this link](#)
+![View the deployed Note Taker app at this link](https://note-taker-jmcconna.herokuapp.com/)
