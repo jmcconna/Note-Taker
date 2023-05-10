@@ -40,7 +40,7 @@ app.post('/api/notes', (req, res) => {
         };
         fs.readFile("./db/db.json", (err, data) => {
             let newArr = JSON.parse(data);
-            newArr.push(newNote)
+            newArr.push(newNote);
             console.log(`new arr: ${JSON.stringify(newArr)}`)
             fs.writeFile('./db/db.json', JSON.stringify(newArr), (err) => {
                 err ? res.status(500) : res.json('Note added successfully');
